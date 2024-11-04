@@ -1,6 +1,7 @@
 #include <list>
 #include <vector>
 #include <iostream>
+#include "MyList.h"
 namespace studyAlgo
 {
 	class Board
