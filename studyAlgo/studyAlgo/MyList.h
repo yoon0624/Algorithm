@@ -10,6 +10,11 @@ namespace studyAlgo
 		MyList(size_t cap = DEFAULT_SIZE) : data(new T[cap]), Count(0), Capacity(cap)
 		{
 		};
+
+		~MyList()
+		{
+			delete[] data;
+		}
 		int Count = 0;	// 실제 사용중인 데이터 개수
 		int Capacity = DEFAULT_SIZE;
 

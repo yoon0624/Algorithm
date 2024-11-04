@@ -13,6 +13,10 @@ namespace studyAlgo
 
 		MyList<int> _data4 = MyList<int>(4);
 		Board();
+		~Board() 
+		{
+			delete[] _data;
+		}
 		void init()
 		{
 			_data2.push_back(101);

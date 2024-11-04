@@ -54,9 +54,9 @@ void main()
 		std::cout << "\x1B[33m" << nanoSec.count() << "\x1B[m" << std::endl;
 		last = start;
 
-		Board* board = new Board();
-		board->init();
-
+		Board board = Board();
+		board.init();
+		
 	}
 
 }
